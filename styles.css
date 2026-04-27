@@ -257,8 +257,36 @@ section {
 }
 
 @media (max-width: 600px) {
+  .photo-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 260px 200px 200px;
+  }
+  .photo-slot.featured { grid-column: 1; grid-row: 1; }
+  .event-row { grid-template-columns: 1fr; gap: 1.5rem; }
+  .event-card { padding: 2rem; }
+
+  .hero {
+    min-height: 100svh;
+    padding: 0 1.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-content {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .hero-name {
+    font-size: clamp(2.8rem, 16vw, 4rem);
+  }
+
+  .hero-degree {
+    margin-top: 1.5rem;
+  }
+
   .scroll-cue {
-    bottom: 3.5rem;
+    bottom: 4.5rem;
   }
 
   .scroll-cue-arrow {
@@ -268,6 +296,12 @@ section {
     animation: arrowBounce 1.5s ease-in-out infinite;
     line-height: 1;
   }
+
+  @keyframes arrowBounce {
+    0%, 100% { opacity: 0.3; transform: translateY(0); }
+    50%       { opacity: 1;   transform: translateY(5px); }
+  }
+}
 
   .scroll-cue-arrow {
   display: none;
