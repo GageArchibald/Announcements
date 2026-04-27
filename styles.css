@@ -258,7 +258,7 @@ section {
 
 @media (max-width: 600px) {
   .scroll-cue {
-    bottom: 2rem;
+    center: 2rem;
     gap: 4px;
   }
 
