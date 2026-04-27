@@ -321,7 +321,6 @@ section {
 .placeholder-text {
   font-style: italic;
   color: var(--ink);
-  opacity: 0.6;
 }
 
 
