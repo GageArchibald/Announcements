@@ -188,6 +188,21 @@ section {
   margin-bottom: 1.5rem;
 }
 
+.section-body {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--ink-mid);
+  line-height: 1.9;
+  max-width: 560px;
+}
+
+.section-body--light {
+  font-size: 0.85rem;
+  color: var(--ink-light);
+  line-height: 1.8;
+  max-width: 520px;
+}
+
 .gold-rule {
   width: 48px;
   height: 1px;
