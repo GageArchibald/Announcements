@@ -470,4 +470,26 @@ footer {
   .photo-slot.featured { grid-column: 1; grid-row: 1; }
   .event-row { grid-template-columns: 1fr; gap: 1.5rem; }
   .event-card { padding: 2rem; }
+
+  .hero {
+    padding: 1.5rem 1.5rem 5rem;
+    align-items: flex-start;
+    padding-top: max(2rem, env(safe-area-inset-top));
+  }
+
+  .hero-content {
+    margin-top: 2rem;
+  }
+
+  .hero-name {
+    font-size: clamp(2.8rem, 16vw, 4rem);
+  }
+
+  .hero-degree {
+    margin-top: 1.5rem;
+  }
+
+  .scroll-cue {
+    bottom: 1.5rem;
+  }
 }
