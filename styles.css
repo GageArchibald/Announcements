@@ -257,7 +257,26 @@ section {
 }
 
 @media (max-width: 600px) {
-  .next-cards { grid-template-columns: 1fr; }
+  .scroll-cue {
+    bottom: 3.5rem;
+  }
+
+  .scroll-cue-arrow {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--gold);
+    animation: arrowBounce 1.5s ease-in-out infinite;
+    line-height: 1;
+  }
+
+  .scroll-cue-arrow {
+  display: none;
+}
+
+  @keyframes arrowBounce {
+    0%, 100% { opacity: 0.3; transform: translateY(0); }
+    50%       { opacity: 1;   transform: translateY(5px); }
+  }
 }
 
 
