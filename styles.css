@@ -257,44 +257,51 @@ section {
 }
 
 @media (max-width: 600px) {
-  .photo-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 260px 200px 200px;
-  }
-  .photo-slot.featured { grid-column: 1; grid-row: 1; }
-  .event-row { grid-template-columns: 1fr; gap: 1.5rem; }
-  .event-card { padding: 2rem; }
-
-  .hero {
-    min-height: 100svh;
-    padding: 0 1.5rem;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .hero-content {
-    margin-top: 0;
-    padding-top: 0;
-  }
-
-  .hero-name {
-    font-size: clamp(2.8rem, 16vw, 4rem);
-  }
-
-  .hero-degree {
-    margin-top: 1.5rem;
-  }
-
   .scroll-cue {
-    bottom: 4.5rem;
+    bottom: 2rem;
+    gap: 4px;
+  }
+
+  .scroll-cue span {
+    font-size: 0.55rem;
+    letter-spacing: 0.25em;
+    color: rgba(255,255,255,0.5);
+  }
+
+  .scroll-cue-line {
+    display: none;
   }
 
   .scroll-cue-arrow {
-    display: block;
-    font-size: 1.4rem;
-    color: var(--gold);
-    animation: arrowBounce 1.5s ease-in-out infinite;
-    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .scroll-cue-arrow-chevron {
+    width: 12px;
+    height: 7px;
+    border-right: 1.5px solid var(--gold);
+    border-bottom: 1.5px solid var(--gold);
+    transform: rotate(45deg);
+    animation: arrowBounce 1.2s ease-in-out infinite;
+  }
+
+  .scroll-cue-arrow-chevron:nth-child(2) {
+    animation-delay: 0.15s;
+    opacity: 0.6;
+  }
+
+  .scroll-cue-arrow-chevron:nth-child(3) {
+    animation-delay: 0.3s;
+    opacity: 0.3;
+  }
+
+  @keyframes arrowBounce {
+    0%, 100% { opacity: 0.2; transform: rotate(45deg) translateY(-2px); }
+    50%       { opacity: 1;   transform: rotate(45deg) translateY(2px); }
+  }
   }
 
   @keyframes arrowBounce {
