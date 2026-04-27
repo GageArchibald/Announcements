@@ -392,6 +392,80 @@ section {
 }
 
 
+/* ── VENMO ── */
+.venmo-section {
+  background: var(--cream);
+  border-top: 1px solid rgba(184,151,58,0.2);
+  border-bottom: 1px solid rgba(184,151,58,0.2);
+}
+
+.venmo-card {
+  margin-top: 3rem;
+  border: 1px solid rgba(184,151,58,0.3);
+  padding: 3.5rem 2rem;
+  text-align: center;
+  position: relative;
+  background: var(--white);
+}
+
+.venmo-card::before {
+  content: '';
+  position: absolute;
+  top: 8px; left: 8px; right: -8px; bottom: -8px;
+  border: 1px solid rgba(184,151,58,0.15);
+  pointer-events: none;
+}
+
+.venmo-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 1.5rem;
+  color: var(--gold);
+}
+
+.venmo-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.venmo-handle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  font-weight: 300;
+  color: var(--ink);
+  letter-spacing: 0.04em;
+  margin-bottom: 0.4rem;
+}
+
+.venmo-sub {
+  font-size: 0.65rem;
+  font-weight: 300;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 2rem;
+}
+
+.venmo-btn {
+  display: inline-block;
+  padding: 0.85rem 2.5rem;
+  background: var(--ink);
+  color: var(--gold-light);
+  font-family: 'Jost', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 300;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.venmo-btn:hover {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+
 /* ── FOOTER ── */
 footer {
   background: var(--ink);
